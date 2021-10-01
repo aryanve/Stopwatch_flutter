@@ -41,7 +41,7 @@ class _StopwatchPageState extends State<StopwatchPage> {
 
   @override
   void dispose() {
-    _timer.cancel();
+    _timer?.cancel();
     super.dispose();
   }
 
@@ -94,7 +94,7 @@ class _StopwatchPageState extends State<StopwatchPage> {
                   child:FloatingActionButton(
                   onPressed: _startButton,
                   child: Icon(Icons.play_arrow,size: 47,),
-                  backgroundColor: Colors.green,
+                  backgroundColor: Colors.green[500],
                 ),
                 ),
                 SizedBox(
@@ -120,7 +120,7 @@ class _StopwatchPageState extends State<StopwatchPage> {
           boxShadow: <BoxShadow>[
             BoxShadow(
               color: Colors.white70,
-              offset: Offset(2,2),
+              offset: Offset(2,3),
               blurRadius: 20,
             )
           ]
