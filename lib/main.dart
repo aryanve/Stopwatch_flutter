@@ -73,16 +73,16 @@ class _StopwatchPageState extends State<StopwatchPage> {
 
     return Center(
       child: Container(
-        height: 330,
-        width: 340,
+        height: 340,
+        width: 350,
         child: Column(
           children: <Widget>[
             Padding(
               padding: const EdgeInsets.all(18),
-              child: Text("Stopwatch",style: TextStyle(color: Colors.cyanAccent,fontSize: 50),),
+              child: Text("Stopwatch",style: TextStyle(color: Colors.cyanAccent,fontSize: 51),),
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 10,right: 10,top: 22,bottom: 34),
+              padding: const EdgeInsets.only(left: 10,right: 10,top: 20,bottom: 35),
               child: Text('${_formatter.format(diffTime)}',style: TextStyle(color: Colors.pinkAccent,fontSize: 50),),
             ),
             Row(
@@ -120,8 +120,8 @@ class _StopwatchPageState extends State<StopwatchPage> {
           boxShadow: <BoxShadow>[
             BoxShadow(
               color: Colors.white70,
-              offset: Offset(2,3),
-              blurRadius: 20,
+              offset: Offset(3,4),
+              blurRadius: 15,
             )
           ]
         ),
